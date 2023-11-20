@@ -23,8 +23,10 @@ def game():
     print("\nBem-vindo(a) ao jogo da forca")
     print("Adivinhe a palavra abaixo:\n")
 
-    # Lista de palavras parao jogo
-    palavras = ["banana", "abacate", "uva", "morango", "laranja"]
+    # Lista de palavras para o jogo
+
+    with open("Cap07/arquivo.txt", "r") as file:
+        palavras = [linha.strip() for linha in file]
 
     # Escolhe randomicamente uma palavra
     palavra = random.choice(palavras)
