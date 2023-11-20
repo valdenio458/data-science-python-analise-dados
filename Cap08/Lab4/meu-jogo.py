@@ -155,7 +155,7 @@ class Hangman:
 # Método para ler uma palavra de forma aleatória do banco de palavras
 def rand_palavra():
     # Lista de palavras para o jogo
-    with open("Cap07/arquivo.txt", "r") as file:
+    with open("Cap08/arquivo.txt", "r") as file:
         palavras = [linha.strip() for linha in file]
 
     # Escolhe randomicamente uma palavra
